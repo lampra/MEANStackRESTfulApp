@@ -1,8 +1,8 @@
 Platform
 
 MongoDB 3.2.8
-Express
-Angular 
+ExpressJS
+Angular5
 NodeJS 6.10.0
 
 INSTRUCTIONS FOR DEVELOPERS
