@@ -6,14 +6,14 @@ const passport=require('passport');
 const mongoose=require('mongoose');
 const router=express.Router('route');
 
-// const config = require('./config/database');
+const config = require('./config/database');
 const app= express();
 const users= require('./routes/users');
 const scores= require('./routes/scores');
 
 // Global variables and aliases
 var port = process.env.PORT || 3000;
-/*
+
 mongoose.connect(config.database);
 mongoose.connection.once('open', function() {
   console.log('Connected to database in ' + config.database);
@@ -21,7 +21,7 @@ mongoose.connection.once('open', function() {
 mongoose.connection.on('error', function() {
   console.info('Error: Could not connect to MongoDB');
 });
-*/
+
 
 //cors enables to access server from different domains
 app.use(cors());
