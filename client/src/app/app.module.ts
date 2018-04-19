@@ -11,11 +11,13 @@ import { HomeComponent } from './components/home/home.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 const appRoutes:Routes = [
-  {path:'',component:HomeComponent},
+  {path:'home',component:HomeComponent},
   {path:'login',component:LoginComponent},
-  {path:'dashboard',component:DashboardComponent},
+  {path:'',component:DashboardComponent},
+  {path:'register', component:RegisterComponent},
   {path:'profile',component:ProfileComponent}
 ]
 
@@ -27,7 +29,8 @@ const appRoutes:Routes = [
     HomeComponent,
     ProfileComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

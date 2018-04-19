@@ -26,8 +26,8 @@ router.post('/register', (req, res, next) => {
 });
 
 //Authenticate
-router.get('/authenticate', (req, res, next) => {
-    res.send('AUTHENTICATE');
+router.get('/login', (req, res, next) => {
+    res.send('AUTHENTICATE' );
 });
 
 //Profile
